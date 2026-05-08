@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioAgro Brasil - Biotecnologia para um Agro Mais Forte</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D47A1',
+                        'primary-foreground': '#FFFFFF',
+                        secondary: '#E8F5E9',
+                        'secondary-foreground': '#1B5E20',
+                        accent: '#1B5E20',
+                        background: '#FFFFFF',
+                        foreground: '#1B2631',
+                        border: '#E0E0E0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1B2631;
+            background-color: #FFFFFF;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        @media (min-width: 640px) {
+            .container { padding: 0 1.5rem; }
+        }
+        @media (min-width: 1024px) {
+            .container { padding: 0 2rem; }
+        }
+        .card {
+            background: #F8F9FA;
+            border: 1px solid #E0E0E0;
+            border-radius: 0.65rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="container py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                <h1 class="text-2xl font-bold text-[#0D47A1]">BioAgro Brasil</h1>
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#beneficios" class="text-gray-700 hover:text-blue-900 transition">Benefícios</a>
+                <a href="#culturas" class="text-gray-700 hover:text-blue-900 transition">Culturas</a>
+                <a href="#impacto" class="text-gray-700 hover:text-blue-900 transition">Impacto</a>
+                <a href="#desafios" class="text-gray-700 hover:text-blue-900 transition">Desafios</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-green-50 py-20">
+        <div class="container">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-5xl md:text-6xl font-bold leading-tight text-[#0D47A1]">
+                        Biotecnologia para um Agro Mais Forte
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Conheça como a inovação genética está transformando a agricultura brasileira, aumentando produtividade e sustentabilidade em cada colheita.
+                    </p>
+                    <div class="flex gap-4 pt-4">
+                        <a href="#beneficios" class="bg-[#0D47A1] hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition">
+                            Saiba Mais
+                        </a>
+                        <a href="#culturas" class="border border-[#1B5E20] text-[#1B5E20] hover:bg-green-50 px-8 py-3 rounded-lg font-semibold transition">
+                            Explore
+                        </a>
+                    </div>
+                </div>
+                <div class="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-2xl">
+                    <img
+                        src="https://d2xsxph8kpxj0f.cloudfront.net/310519663370373784/bxTKWB7TKZSeqPmzy668yt/hero-biotech-TZmQXk3t9oNSD6uYpufunC.webp"
+                        alt="Biotecnologia no campo"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-[#0D47A1]">92%</div>
+                    <p class="text-gray-600">Soja Transgênica</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-[#1B5E20]">90%</div>
+                    <p class="text-gray-600">Milho Transgênico</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-[#0D47A1]">R$ 5B</div>
+                    <p class="text-gray-600">Mercado Bioinsumos</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-bold text-[#1B5E20]">US$ 53B</div>
+                    <p class="text-gray-600">Potencial 20 Anos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-20 bg-gradient-to-r from-green-50 to-blue-50">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-4 text-center text-[#0D47A1]">
+                Benefícios da Biotecnologia
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                A biotecnologia agrícola oferece soluções inovadoras para os principais desafios do agronegócio brasileiro.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produtividade -->
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Produtividade</h3>
+                    <p class="text-gray-600">Aumento significativo de colheitas e rendimento por hectare</p>
+                </div>
+                <!-- Resistência -->
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Resistência</h3>
+                    <p class="text-gray-600">Plantas resistentes a pragas, doenças e estresses climáticos</p>
+                </div>
+                <!-- Eficiência Hídrica -->
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Eficiência Hídrica</h3>
+                    <p class="text-gray-600">Melhor aproveitamento de água e redução de desperdícios</p>
+                </div>
+                <!-- Sustentabilidade -->
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Sustentabilidade</h3>
+                    <p class="text-gray-600">Redução de defensivos químicos e impacto ambiental</p>
+                </div>
+                <!-- Nutrição -->
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="m12 10 2 2m0-2-2 2"/><path d="M10 22h4a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="M18 10h-2"/><path d="M18 14h-2"/><path d="M6 10h2"/><path d="M6 14h2"/><path d="M10 5V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Nutrição</h3>
+                    <p class="text-gray-600">Alimentos mais nutritivos e seguros para consumo</p>
+                </div>
+                <!-- Inovação -->
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Inovação</h3>
+                    <p class="text-gray-600">Tecnologias de ponta em edição gênica e marcadores moleculares</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culturas -->
+    <section id="culturas" class="py-20 bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-4 text-center text-[#0D47A1]">
+                Principais Culturas Transgênicas
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                O Brasil lidera a adoção de biotecnologia nas principais culturas agrícolas.
+            </p>
+
+            <div class="relative h-96 rounded-lg overflow-hidden shadow-2xl mb-12">
+                <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663370373784/bxTKWB7TKZSeqPmzy668yt/soja-milho-algodao-cWT776R6gj4bsP774TE9tM.webp"
+                    alt="Principais culturas transgênicas"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- SOJA -->
+                <div class="card border-2 border-[#1B5E20]">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-[#1B5E20]">SOJA</h3>
+                        <span class="text-3xl font-bold text-[#1B5E20]">92%</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3 italic">Glycine max</p>
+                    <p class="text-gray-700">Fonte de proteína e óleo vegetal. Resistência a pragas e herbicidas.</p>
+                </div>
+                <!-- MILHO -->
+                <div class="card border-2 border-[#0D47A1]">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-[#0D47A1]">MILHO</h3>
+                        <span class="text-3xl font-bold text-[#0D47A1]">90%</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3 italic">Zea mays</p>
+                    <p class="text-gray-700">Fonte de energia e nutrientes. Produção de ração e biocombustíveis.</p>
+                </div>
+                <!-- ALGODÃO -->
+                <div class="card border-2 border-[#8B7355]">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-[#8B7355]">ALGODÃO</h3>
+                        <span class="text-3xl font-bold text-[#8B7355]">47%</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3 italic">Gossypium hirsutum</p>
+                    <p class="text-gray-700">Fibra natural de qualidade. Redução significativa de inseticidas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto -->
+    <section id="impacto" class="py-20 bg-gradient-to-l from-blue-50 to-green-50">
+        <div class="container">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-2xl">
+                    <img
+                        src="https://d2xsxph8kpxj0f.cloudfront.net/310519663370373784/bxTKWB7TKZSeqPmzy668yt/sustainable-farming-5LYAUbbhKkhPjQWDyTYdtd.webp"
+                        alt="Agricultura sustentável"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-bold text-[#0D47A1]">
+                        Impacto Ambiental Positivo
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        A biotecnologia reduz significativamente o uso de defensivos químicos, preserva o solo e a água, e diminui a emissão de carbono na agricultura.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            <span class="text-gray-700">Redução de 30-40% no uso de inseticidas</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            <span class="text-gray-700">Melhor conservação do solo e da água</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            <span class="text-gray-700">Menor pegada de carbono por tonelada produzida</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            <span class="text-gray-700">Preservação da biodiversidade agrícola</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            <span class="text-gray-700">Segurança alimentar global</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafios -->
+    <section id="desafios" class="py-20 bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-4 text-center text-[#0D47A1]">
+                Desafios para Expansão
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Para consolidar a liderança brasileira em biotecnologia agrícola, é necessário enfrentar alguns desafios estratégicos.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card bg-gradient-to-br from-white to-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 1 1-4 0V7a2 2 0 1 1 4 0v5Z"/><path d="M12 7V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Pesquisa Científica</h3>
+                    <p class="text-gray-600">Ampliar investimentos em pesquisa e desenvolvimento de novas variedades adaptadas ao clima tropical.</p>
+                </div>
+                <div class="card bg-gradient-to-br from-white to-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Regulação Ágil</h3>
+                    <p class="text-gray-600">Simplificar processos burocráticos para acelerar a aprovação de novas tecnologias biotecnológicas.</p>
+                </div>
+                <div class="card bg-gradient-to-br from-white to-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Acesso Democrático</h3>
+                    <p class="text-gray-600">Garantir que pequenos e médios produtores tenham acesso às inovações biotecnológicas disponíveis.</p>
+                </div>
+                <div class="card bg-gradient-to-br from-white to-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D47A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-[#1B5E20]">Fortalecimento Industrial</h3>
+                    <p class="text-gray-600">Fortalecer a cadeia de bioindústrias nacionais para aumentar competitividade global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-[#0D47A1] text-white">
+        <div class="container text-center space-y-6">
+            <h2 class="text-4xl font-bold">O Futuro da Agricultura é Agora</h2>
+            <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+                A biotecnologia está moldando uma agricultura mais produtiva, sustentável e resiliente. O Brasil está na vanguarda dessa revolução.
+            </p>
+            <button class="bg-white text-[#0D47A1] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition">
+                Conheça Mais Sobre Nossas Pesquisas
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">BioAgro Brasil</h3>
+                    <p class="text-sm">Promovendo inovação e sustentabilidade no agronegócio brasileiro através da biotecnologia.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Navegação</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beneficios" class="hover:text-white transition">Benefícios</a></li>
+                        <li><a href="#culturas" class="hover:text-white transition">Culturas</a></li>
+                        <li><a href="#impacto" class="hover:text-white transition">Impacto</a></li>
+                        <li><a href="#desafios" class="hover:text-white transition">Desafios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contato</h3>
+                    <p class="text-sm">Email: contato@bioagrobrasil.com.br</p>
+                    <p class="text-sm">Telefone: (11) 3000-0000</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2026 BioAgro Brasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
